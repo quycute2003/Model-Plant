@@ -1,25 +1,75 @@
-# Python venv
+# =====================================
+# Python
+# =====================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.pickle
+*.tmp
+
+# Virtual environment
 .venv/
 venv/
 env/
+ENV/
 
-# Cache & logs
-__pycache__/
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs
 *.log
+*.out
+*.err
 
-# TensorFlow checkpoints & big files
-*.tflite
-*.h5
-*.hdf5
-*.keras
-saved_model/
-*.pb
-variables/
+# System files
+.DS_Store
+Thumbs.db
 
 # IDE
-.idea/
 .vscode/
+.idea/
 
-# OS
-Thumbs.db
-.DS_Store
+# Cache
+.cache/
+*.cache
+
+# Build
+dist/
+build/
+
+# FastAPI / Uvicorn
+*.db
+*.sqlite3
+
+# ML / DL
+checkpoints/
+saved_model/
+*.h5
+*.hdf5
+*.weights.h5
+
+# Ignore raw datasets
+dataset/
+data/
+*.zip
+*.tar.gz
+
+# Git LFS (do NOT ignore .keras or .tflite — because we track with LFS)
+# Nếu bạn muốn không push model (chỉ dùng local), uncomment dòng dưới:
+# *.keras
+# *.tflite
+
+# Temp folders
+temp/
+tmp/
+
+# Pycharm
+*.iml
+.idea/
+
+# Windows temp
+ehthumbs.db
+Desktop.ini

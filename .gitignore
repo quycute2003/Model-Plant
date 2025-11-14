@@ -1,0 +1,25 @@
+# Python venv
+.venv/
+venv/
+env/
+
+# Cache & logs
+__pycache__/
+*.log
+
+# TensorFlow checkpoints & big files
+*.tflite
+*.h5
+*.hdf5
+*.keras
+saved_model/
+*.pb
+variables/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
